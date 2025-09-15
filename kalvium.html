@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kalvium Experience Survey</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+   <h1> Kalvium Experience Survay</h1>
+
+    <form class="survey" action="#" method="post" novalidate>
+      <div class="field">
+        <label for="fullname">Full Name</label>
+        <input id="fullname" name="fullname" type="text" placeholder="Enter your full name" required />
+      </div>
+
+      <div class="field">
+        <label for="email">Email Address</label>
+        <input id="email" name="email" type="email" placeholder="Enter your email" required />
+      </div>
+
+      <label for ="rating"><label></label>
+        <legend>Rate your Kalvium Experience</legend>
+        <label><input type="radio" name="rating" value="excellent" /> Excellent</label>
+        <label><input type="radio" name="rating" value="good" /> Good</label>
+        <label><input type="radio" name="rating" value="average" /> Average</label>
+        <label><input type="radio" name="rating" value="poor" /> Poor</label>
+
+      <label for="activities"><label> 
+        <legend>Select your favorite activities</legend>
+        <label><input type="checkbox" name="act" value="coding" /> Coding</label>
+        <label><input type="checkbox" name="act" value="gaming" /> Gaming</label>
+        <label><input type="checkbox" name="act" value="discussions" /> Discussions</label>
+        <label><input type="checkbox" name="act" value="workshops" /> Workshops</label>
+
+      <div class="field">
+        <label for="comm-method">Preferred Communication Method</label>
+        <select id="comm-method" name="comm-method">
+          <option>Email</option>
+          <option>Phone</option>
+          <option>WhatsApp</option>
+          <option>Telegram</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="comments">Additional Comments</label>
+        <textarea id="comments" name="comments" rows="5" placeholder="Share your thoughts..."></textarea>
+      </div>
+
+      <div class="actions">
+        <button type="submit" class="btn">Submit</button>
+      </div>
+    </form>
+
+    <footer class="footer-note">KALVIUM</footer>
+  </main>
+</body>
+</html>
